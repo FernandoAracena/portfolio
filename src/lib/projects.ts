@@ -1,0 +1,63 @@
+export const featuredProjects = [
+  {
+    title: "Digital Saksassistent (Demonstrator)",
+    description: "En demonstrator av en KI-drevet plattform for modernisering av norske domstoler, med fokus på automatisert transkripsjon.",
+    longDescription: "Dette er en demonstrator utviklet for Domstoladministrasjonen for å vise potensialet i intelligent automatisering. Løsningen visualiserer fremtidens saksbehandling med funksjoner som automatisert transkripsjon av rettsmøter og søkbarhet i mediebevis, bygget på Azure og moderne web-teknologi.",
+    slug: "digital-saksassistent",
+    image: "/images/dsa-collage.png",
+    tech: ["Azure", "Cognitive Services", "Whisper", "Python", "React", "Terraform"],
+    category: "work",
+  },
+  {
+    title: "Skriber",
+    description: "Bidro i utviklingen av Skriber, et verktøy for politiet. Mitt fokus var på utvikling av et system for tagging og organisering av filer for etterforskere.",
+    longDescription: "Som utvikler på Skriber-prosjektet samarbeidet jeg om å lage et effektivt system for tagging og kategorisering av lydfiler og dokumenter. Dette systemet hjelper etterforskere med å raskt organisere og gjenfinne kritisk informasjon i store datamengder, og er en integrert del av politiets digitale verktøykasse.",
+    slug: "skriber",
+    image: "/images/skriber-architecture.png",
+    tech: ["Python", "React", "TypeScript", "FastAPI", "Docker", "Generative AI"],
+    category: "work",
+  },
+  {
+    title: "CSI Assistant Ecosystem",
+    description: "Et avansert økosystem for digital etterforskning med LangGraph-drevne AI-agenter, sanntids protokoll-overvåking og dyp hardware-integrasjon.",
+    longDescription: "Et omfattende økosystem som digitaliserer feltarbeid og etterforskning. Løsningen består av et Angular 19+ dashboard med visuell workflow-editor, en offline-first Expo-mobilapp, og en Android Wrapper i Kotlin for RealWear. Backend-arkitekturen drives av LangGraph for orkestrering av autonome multi-agent systemer som opererer i 'Thought-Action-Observation'-sykluser. Systemet tilbyr tre AI-moduser (RAG, Chat, Agent) og gir proaktive advarsler ved brudd på politiets prosedyrer (SOP). Inkluderer 'Take Point'-teknologi for presis tidssynkronisering av bevis og en audit-log for integritetskontroll av digitale spor.",
+    slug: "csi-assistant",
+    image: "/images/csi-architecture.png",
+    tech: ["Python", "FastAPI", "LangGraph", "Multi-Agent Systems", "Angular 19+", "Azure", "pgvector", "Faster-Whisper", "Expo", "Kotlin", "Docker", "PostgreSQL", "MinIO"],
+    category: "work",
+    subProjects: [
+      {
+        title: "CSI Reporting Assistant (Dashboard & Backend)",
+        description: "Intelligent hub med tre AI-moduser, visuell workflow-styring og sanntids compliance-varsler. Backend bruker LangGraph for agent-orkestrering og Celery for asynkron ASR-prosessering.",
+      },
+      {
+        title: "CSI Assistant App (Mobile)",
+        description: "Offline-first Expo-app med 'Take Point' bilde-synkronisering, SHA-256 integritetskontroll og robust datasynkronisering for feltarbeid.",
+      },
+      {
+        title: "WrapperCSI (Native Bridge)",
+        description: "Spesialisert Kotlin-wrapper for RealWear/JodaPro. Bruker en WebView-Native Bridge for å gi web-appen sikker tilgang til maskinvare og sensorer i et kontrollert miljø.",
+      },
+    ],
+  },
+  {
+    title: "LetsDanceToday",
+    description: "Internasjonal plattform for å oppdage og dele dansearrangementer. Kobler dansere sammen på tvers av landegrenser.",
+    longDescription: "LetsDanceToday er en dedikert plattform for dansemiljøet, designet for å gjøre det enkelt å finne workshops, festivaler og sosiale arrangementer. Løsningen tilbyr en interaktiv oversikt over eventer globalt, og fungerer som et samlingspunkt for dansere uansett nivå.",
+    slug: "letsdancetoday",
+    image: "/images/letsdancetoday.png",
+    tech: ["React", "Node.js", "PostgreSQL", "Google Maps API", "C#"],
+    category: "personal",
+    url: "https://letsdancetoday.com",
+  },
+  {
+    title: "Psykolog Miriam Heen Skotland",
+    description: "Offisiell nettside for privatpraksis i Oslo. Tilbyr individualterapi, parterapi og foreldreveiledning i et trygt rom.",
+    longDescription: "En moderne og trygg digital plattform for psykologpraksis. Nettsiden fungerer som hovedkanal for pasientkontakt og timebestilling, med fokus på personvern og brukervennlighet. Inkluderer integrasjon mot ledigpsykolog.no for booking og sikker informasjonshåndtering. Tilbyr tjenester som individualterapi, parterapi og foreldreveiledning sentralt i Oslo.",
+    slug: "psykolog-webapp",
+    image: "/images/psykolog-webapp.png",
+    tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "Nodemailer", "Vercel", "Google Maps API"],
+    category: "personal",
+    url: "https://www.miriampsykolog.no/",
+  },
+];
