@@ -20,4 +20,4 @@ Dette prosjektet representerer toppen av min tekniske ekspertise:
 - **Infrastructure:** Azure, Docker, Vercel, MinIO/S3.
 
 ## 📧 Kontakt
-Ta gjerne kontakt via [fernandoaracena.com](https://fernandoaracena.com) for samarbeid eller rådgivning.
+Ta gjerne kontakt via [arfedaIT.no](https://arfedaIT.no) for samarbeid eller rådgivning.
