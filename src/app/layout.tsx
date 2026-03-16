@@ -8,8 +8,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fernando Aracena IT-Tjenester",
-  description: "Fullstack utvikler og AI-arkitekt.",
+  title: "arfedaIT.no | Aracena Fernando - Fullstack Utvikler & AI-arkitekt",
+  description: "arfedaIT.no leverer samfunnskritiske løsninger innen Forensic Tech og avansert AI-orkestrering med LangGraph.",
 };
 
 export default function RootLayout({

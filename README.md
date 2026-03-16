@@ -1,4 +1,4 @@
-# Fernando Aracena - Professional Portfolio
+# Aracena Fernando - Professional Portfolio
 
 Velkommen til mitt profesjonelle portefølje. Jeg er en **Fullstack Utvikler og AI-arkitekt** spesialisert på autonome agent-systemer, samfunnskritiske løsninger innen **Forensic Tech** og robuste arkitekturer for offentlig sektor.
 

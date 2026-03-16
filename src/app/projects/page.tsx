@@ -1,7 +1,4 @@
-
 import { ProjectCard } from "@/components/ProjectCard";
-import { GithubProjects } from "@/components/GithubProjects";
-
 import { featuredProjects } from "@/lib/projects";
 
 export default function ProjectsPage() {
@@ -10,7 +7,7 @@ export default function ProjectsPage() {
 
   return (
     <main>
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto py-12 px-4">
         <h1 className="text-4xl font-bold">Prosjekter</h1>
         <p className="mt-8 text-lg">
           Fra enkle nettsider til komplekse, nasjonale bedriftsløsninger – her er et utvalg av prosjekter som viser bredden i min tekniske kompetanse.
@@ -29,6 +26,17 @@ export default function ProjectsPage() {
             </div>
           ))}
         </div>
+        
+        <div className="mt-8 text-center">
+          <a
+            href="https://www.politiet.no/om-politiet/organisasjonen/politidistrikter/oslo/ai4interviews--innovasjon-i-politiet"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 py-2"
+          >
+            Les mer om AI4Interviews hos Politiet
+          </a>
+        </div>
 
         <h2 className="mt-16 text-3xl font-bold border-b pb-2">Egne Prosjekter</h2>
         <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -43,6 +51,7 @@ export default function ProjectsPage() {
             </div>
           ))}
         </div>
+        
         <div className="mt-16 text-center">
           <a
             href="https://github.com/FernandoAracena"

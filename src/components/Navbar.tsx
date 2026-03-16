@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="bg-background p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">Fernando Aracena</Link>
+        <Link href="/" className="text-2xl font-bold">arfedaIT</Link>
         <div>
           <Link href="/" className="p-2">Hjem</Link>
           <Link href="/projects" className="p-2">Prosjekter</Link>
