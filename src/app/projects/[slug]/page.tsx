@@ -1,11 +1,38 @@
 import { featuredProjects } from "@/lib/projects";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   return featuredProjects.map((project) => ({
     slug: project.slug,
   }));
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const project = featuredProjects.find((p) => p.slug === params.slug);
+
+  if (!project) {
+    return {
+      title: "Prosjekt ikke funnet",
+    };
+  }
+
+  return {
+    title: project.title,
+    description: project.description,
+    openGraph: {
+      title: `${project.title} | Aracena Fernando`,
+      description: project.description,
+      images: [project.image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: project.title,
+      description: project.description,
+      images: [project.image],
+    },
+  };
 }
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
