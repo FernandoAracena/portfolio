@@ -19,16 +19,16 @@ export const featuredProjects = [
   },
   {
     title: "CSI Assistant Ecosystem",
-    description: "Et avansert økosystem for digital etterforskning med LangGraph-drevne AI-agenter, sanntids protokoll-overvåking og dyp hardware-integrasjon.",
-    longDescription: "Et omfattende økosystem som digitaliserer feltarbeid og etterforskning. Løsningen består av et Angular 19+ dashboard med visuell workflow-editor, en offline-first Expo-mobilapp, og en Android Wrapper i Kotlin for RealWear. Backend-arkitekturen drives av LangGraph for orkestrering av autonome multi-agent systemer som opererer i 'Thought-Action-Observation'-sykluser. Systemet tilbyr tre AI-moduser (RAG, Chat, Agent) og gir proaktive advarsler ved brudd på politiets prosedyrer (SOP). Inkluderer 'Take Point'-teknologi for presis tidssynkronisering av bevis og en audit-log for integritetskontroll av digitale spor.",
+    description: "Et avansert økosystem for digital etterforskning med LangGraph-drevne AI-agenter, sanntids protokoll-overvåking, Human-in-the-Loop godkjenning og dyp hardware-integrasjon.",
+    longDescription: "Et omfattende økosystem som digitaliserer feltarbeid og etterforskning. Løsningen består av et Angular 19+ dashboard med visuell workflow-editor, Visual Reasoning-UI og Human-in-the-Loop (HITL) godkjenning, en offline-first Expo-mobilapp, og en Android Wrapper i Kotlin for RealWear. Backend-arkitekturen drives av LangGraph for orkestrering av autonome multi-agent systemer som opererer i 'Thought-Action-Observation'-sykluser med tilbakestillings-evne når ny bevis motsier opprinnelige funn. Systemet tilbyr tre AI-moduser (RAG, Chat, Agent) og gir proaktive advarsler ved brudd på politiets prosedyrer (SOP). Inkluderer 'Take Point'-teknologi for presis tidssynkronisering av bevis, kryptografisk integritetskontroll (SHA-256) for Chain of Custody, audit-log for integritetskontroll av digitale spor, og Dynamic Prompting for systemtilpasning uten redistribusjon.",
     slug: "csi-assistant",
     image: "/images/csi-architecture.png",
-    tech: ["Python", "FastAPI", "LangGraph", "Multi-Agent Systems", "Angular 19+", "Azure", "pgvector", "Faster-Whisper", "Expo", "Kotlin", "Docker", "PostgreSQL", "MinIO"],
+    tech: ["Python", "FastAPI", "LangGraph", "Multi-Agent Systems", "Human-in-the-Loop", "Visual Reasoning", "Dynamic Prompting", "Angular 19+", "Azure", "pgvector", "Faster-Whisper", "Expo", "Kotlin", "Docker", "PostgreSQL", "MinIO"],
     category: "work",
     subProjects: [
       {
         title: "CSI Reporting Assistant (Dashboard & Backend)",
-        description: "Intelligent hub med tre AI-moduser, visuell workflow-styring og sanntids compliance-varsler. Backend bruker LangGraph for agent-orkestrering og Celery for asynkron ASR-prosessering.",
+        description: "Intelligent hub med tre AI-moduser, visuell workflow-styring, Visual Reasoning-UI, Human-in-the-Loop (HITL) godkjenning og sanntids compliance-varsler. Backend bruker LangGraph for agent-orkestrering med tilbakestillings-evne og Celery for asynkron ASR-prosessering.",
       },
       {
         title: "CSI Assistant App (Mobile)",
