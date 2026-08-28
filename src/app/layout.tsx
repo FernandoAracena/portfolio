@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://arfedait.no"),
   title: {
     default: "Aracena Fernando | Fullstack Utvikler & AI-arkitekt Oslo",
-    template: "%s | arfedaIT.no",
+    template: "%s | arfeda IT",
   },
   description: "Spesialist innen Forensic Tech, avansert AI-orkestrering med LangGraph og samfunnskritiske IT-løsninger i Oslo.",
   keywords: ["Fullstack Utvikler", "AI-arkitekt", "Oslo", "LangGraph", "Forensic Tech", "Norsk politi", "Next.js", "Python", "Maskinlæring"],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://arfedait.no",
     title: "Aracena Fernando | Fullstack Utvikler & AI-arkitekt",
     description: "Utvikler fremtidens AI-løsninger og robuste systemer for rettsmedisin og etterforskning.",
-    siteName: "arfedaIT.no",
+    siteName: "arfeda IT",
     images: [
       {
         url: "/images/og-image.png", // Asegúrate de crear esta imagen más adelante
