@@ -55,7 +55,33 @@ const oneLine = (value: string) => value.replace(/[\u0000-\u001f\u007f]+/g, ' ')
 
 const refuse = (message: string, status: number) => NextResponse.json({ message }, { status });
 
+// The pilot request form on arfedai.no posts here too (one mail sender for both sites).
+// Only these origins get CORS headers; every other origin is refused by the browser.
+const ALLOWED_ORIGINS = new Set(['https://arfedai.no', 'https://www.arfedai.no']);
+
+function corsHeaders(request: Request): Record<string, string> {
+  const origin = request.headers.get('origin') ?? '';
+  if (!ALLOWED_ORIGINS.has(origin)) return {};
+  return {
+    'Access-Control-Allow-Origin': origin,
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Max-Age': '600',
+    Vary: 'Origin',
+  };
+}
+
+export function OPTIONS(request: Request) {
+  return new NextResponse(null, { status: 204, headers: corsHeaders(request) });
+}
+
 export async function POST(request: Request) {
+  const response = await handle(request);
+  for (const [key, value] of Object.entries(corsHeaders(request))) response.headers.set(key, value);
+  return response;
+}
+
+async function handle(request: Request): Promise<NextResponse> {
   if (!(request.headers.get('content-type') ?? '').toLowerCase().startsWith('application/json')) {
     return refuse('Ugyldig forespørsel', 415);
   }
@@ -99,7 +125,9 @@ export async function POST(request: Request) {
   try {
     await sendMail({
       to: process.env.SMTP_EMAIL as string,
-      subject: `Ny melding fra ${cleanName}`,
+      subject: ALLOWED_ORIGINS.has(request.headers.get('origin') ?? '')
+        ? `Pilotforespørsel (arfedai.no) fra ${cleanName}`
+        : `Ny melding fra ${cleanName}`,
       text: `Navn: ${cleanName}\nE-post: ${cleanEmail}\nMelding:\n${cleanMessage}\n`,
     });
     return NextResponse.json({ message: 'Melding sendt!' }, { status: 200 });
