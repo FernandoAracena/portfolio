@@ -6,6 +6,8 @@ export const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  // Hidden from people; form-filling bots write in it and the server then sends nothing.
+  const [website, setWebsite] = useState('');
   const [status, setStatus] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -17,10 +19,10 @@ export const ContactForm = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, email, message }),
+      body: JSON.stringify({ name, email, message, website }),
     });
 
-    const data = await res.json();
+    const data = await res.json().catch(() => ({ message: 'Kunne ikke sende melding' }));
 
     if (res.ok) {
       setStatus('Melding sendt!');
@@ -65,6 +67,18 @@ export const ContactForm = () => {
           required
           rows={4}
           className="mt-1 block w-full px-3 py-2 bg-input border border-border rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+        />
+      </div>
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-10000px', width: 1, height: 1, overflow: 'hidden' }}>
+        <label htmlFor="website">Ikke fyll ut dette feltet</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
         />
       </div>
       <button type="submit" className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-md">
