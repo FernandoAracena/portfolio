@@ -84,6 +84,10 @@ export const ContactForm = () => {
       <button type="submit" className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-md">
         Send melding
       </button>
+      <p className="text-xs text-muted-foreground">
+        Opplysningene brukes bare til å svare på henvendelsen.{' '}
+        <a href="/personvern" className="underline">Les personvernerklæringen</a>.
+      </p>
       {status && <p className="mt-4 text-center">{status}</p>}
     </form>
   );

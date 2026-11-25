@@ -44,7 +44,10 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 text-xs">
-          <p>&copy; {new Date().getFullYear()} Fernando Aracena (arfeda IT). Alle rettigheter forbeholdt.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Fernando Aracena (arfeda IT). Alle rettigheter forbeholdt.{' '}
+            <Link href="/personvern" className="underline hover:text-foreground">Personvern</Link>
+          </p>
           
           <div className="flex items-center gap-2">
             <span>Søker du programvareprodukter?</span>
@@ -63,4 +66,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;
