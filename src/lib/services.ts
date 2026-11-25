@@ -1,7 +1,7 @@
 export const services = [
   {
-    title: "AI-Agenter og Orkestrering",
-    description: "Utvikling av autonome multi-agent systemer med LangGraph. Jeg bygger intelligente agenter som kan planlegge, bruke verktøy og utføre komplekse oppgaver med høy presisjon.",
+    title: "Kontrollert KI for fagdokumentasjon",
+    description: "Jeg bygger løsninger som gjør tale og tekst om til strukturerte data, der siterte verdier kontrolleres mot kilden og et menneske godkjenner. Også agentløsninger med LangGraph der oppgaven krever det.",
   },
   {
     title: "Systemarkitektur og Automatisering",
