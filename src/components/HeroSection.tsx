@@ -16,11 +16,11 @@ export const HeroSection = () => {
         </h1>
         
         <p className="mt-4 text-xl md:text-2xl text-muted-foreground font-medium">
-          Arkitektur for intelligente, robuste og samfunnskritiske systemer
+          Jeg bygger KI-systemer der modellen foreslår, koden kontrollerer og mennesket bestemmer.
         </p>
 
         <p className="mt-6 text-base md:text-lg text-muted-foreground/80 max-w-2xl mx-auto leading-relaxed">
-          Spesialisert på autonome multi-agent systemer med LangGraph, offline-first arkitekturer og sikre løsninger for krevende fagmiljøer. Erfaring fra AI4INTERVIEWS ved Oslo politidistrikt og grunnlegger av teknologiselskapet arfed AI.
+          Fullstack-utvikler og KI-arkitekt i Oslo. Arkitekt og hovedutvikler for CSI Assistant i AI4INTERVIEWS ved Oslo politidistrikt (2024–2026). Grunnlegger av arfed AI, som lager SpeechToForm og SpeechToReport.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -51,10 +51,10 @@ export const HeroSection = () => {
           <div className="p-4 rounded-lg bg-card/50 border border-border/50">
             <div className="flex items-center gap-2 font-semibold text-sm mb-1 text-primary">
               <Cpu className="w-4 h-4" />
-              <span>Autonome Agenter</span>
+              <span>KI under kontroll</span>
             </div>
             <p className="text-xs text-muted-foreground">
-              Kompleks orkestrering med LangGraph, Human-in-the-Loop og verktøystøtte.
+              Uttrekk der siterte verdier kontrolleres mot kilden, og et menneske godkjenner.
             </p>
           </div>
 
@@ -64,21 +64,21 @@ export const HeroSection = () => {
               <span>Samfunnskritisk IT</span>
             </div>
             <p className="text-xs text-muted-foreground">
-              Erfaring fra rettsvesen og politi med fokus på personvern og integritetskontroll.
+              Erfaring fra politi og domstoler, med personvern og beviskjede som krav.
             </p>
           </div>
 
           <div className="p-4 rounded-lg bg-card/50 border border-border/50">
             <div className="flex items-center gap-2 font-semibold text-sm mb-1 text-primary">
               <Terminal className="w-4 h-4" />
-              <span>Offline-First & Edge</span>
+              <span>Uten nett, på enheten</span>
             </div>
             <p className="text-xs text-muted-foreground">
-              Kvantiserte AI-modeller på CPU og pålitelig feltdokumentasjon uten nett.
+              Tale-til-tekst og språkmodeller på CPU og på telefon.
             </p>
           </div>
         </div>
       </div>
     </section>
   );
-};
+};

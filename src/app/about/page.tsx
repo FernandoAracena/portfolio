@@ -14,7 +14,7 @@ export default function AboutPage() {
 
         <div className="space-y-6 text-lg leading-relaxed text-foreground/90">
           <p>
-            Jeg er en erfaren fullstack-utvikler og AI-arkitekt med spesialisering innen autonome multi-agent systemer, sikre arkitekturer og robuste feltløsninger for krevende miljøer.
+            Jeg er en erfaren fullstack-utvikler og AI-arkitekt som bygger KI-systemer der modellen foreslår, koden kontrollerer og mennesket bestemmer – for fagfolk som jobber i felt.
           </p>
           
           <p>
@@ -22,7 +22,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            I tillegg til min konsulent- og utviklervirksomhet gjennom <strong>arfeda IT</strong>, er jeg grunnlegger av teknologiselskapet <strong>arfed AI</strong>, hvor vi videreutvikler kommersielle AI-produkter som <em>SpeechToReport</em>.
+            I tillegg til min konsulent- og utviklervirksomhet gjennom <strong>arfeda IT</strong>, er jeg grunnlegger av teknologiselskapet <strong>arfed AI</strong>, som lager <em>SpeechToForm</em> og <em>SpeechToReport</em>.
           </p>
         </div>
 

@@ -8,15 +8,13 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const GA_MEASUREMENT_ID = "G-ZMWY04D5Y7";
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://arfedait.no"),
   title: {
     default: "Aracena Fernando | Fullstack Utvikler & AI-arkitekt Oslo",
     template: "%s | arfeda IT",
   },
-  description: "Spesialist innen Forensic Tech, avansert AI-orkestrering med LangGraph og samfunnskritiske IT-løsninger i Oslo.",
+  description: "Fullstack-utvikler og KI-arkitekt i Oslo. Jeg bygger KI-systemer der modellen foreslår, koden kontrollerer og mennesket bestemmer.",
   keywords: ["Fullstack Utvikler", "AI-arkitekt", "Oslo", "LangGraph", "Forensic Tech", "Norsk politi", "Next.js", "Python", "Maskinlæring"],
   authors: [{ name: "Aracena Fernando" }],
   creator: "Aracena Fernando",
@@ -25,7 +23,7 @@ export const metadata: Metadata = {
     locale: "nb_NO",
     url: "https://arfedait.no",
     title: "Aracena Fernando | Fullstack Utvikler & AI-arkitekt",
-    description: "Utvikler fremtidens AI-løsninger og robuste systemer for rettsmedisin og etterforskning.",
+    description: "KI-systemer for kriminalteknikk og fagdokumentasjon, der modellen foreslår, koden kontrollerer og mennesket bestemmer.",
     siteName: "arfeda IT",
     images: [
       {
@@ -39,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Aracena Fernando | AI Architect & Developer",
-    description: "Spesialist på AI-agenter og Forensic Tech i Oslo.",
+    description: "KI-arkitekt i Oslo: modellen foreslår, koden kontrollerer, mennesket bestemmer.",
     images: ["/images/og-image.png"],
   },
   robots: {
@@ -61,8 +59,8 @@ export default function RootLayout({
     "jobTitle": "Fullstack Utvikler & AI-arkitekt",
     "url": "https://arfedait.no",
     "sameAs": [
-      "https://github.com/arfeda",
-      "https://linkedin.com/in/fernandoaracena" // Reemplaza con tus links reales
+      "https://github.com/FernandoAracena",
+      "https://linkedin.com/in/fernandoaracena"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -80,10 +78,8 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Google Analytics loads only after the visitor accepts (ekomloven § 3-15, GDPR art. 6(1)(a)); see public/consent.js. */}
-        {GA_MEASUREMENT_ID && (
-          <Script id="consent" src="/consent.js" data-ga-id={GA_MEASUREMENT_ID} strategy="afterInteractive" />
-        )}
+        {/* No analytics (removed 25.11.2026). This only clears cookies an earlier Google Analytics may have left. */}
+        <Script id="forget-analytics" src="/forget-analytics.js" strategy="afterInteractive" />
       </head>
       <body
         className={cn(

@@ -6,7 +6,7 @@ export default function AiLabPage() {
       <div className="container mx-auto py-12 px-4">
         <h1 className="text-4xl font-bold mb-8">AI-Lab</h1>
         <p className="text-lg mb-12 text-muted-foreground">
-          Dette er senteret for min forskning og utvikling (FoU). Mens prosjektsiden viser <em>hva</em> jeg har bygget, viser AI-Laben <em>hvordan</em> jeg løser komplekse tekniske utfordringer – fra agent-orkestrering med LangGraph til optimalisering for edge-enheter.
+          Dette er senteret for min forskning og utvikling (FoU). Mens prosjektsiden viser <em>hva</em> jeg har bygget, viser AI-Laben <em>hvordan</em> jeg løser komplekse tekniske utfordringer – fra agent-orkestrering med LangGraph til optimalisering for edge-enheter. Flere av eksemplene kommer fra CSI Assistant, som jeg utviklet i AI4INTERVIEWS ved Oslo politidistrikt (2024–2026); den koden tilhører ikke arfed AI.
         </p>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -30,7 +30,7 @@ export default function AiLabPage() {
             </p>
             <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
               <li><strong>Tre Moduser:</strong> Implementering av spesialiserte chat-moduser: Dokument-RAG, Faglig Chat, og Autonome Agenter med verktøystøtte.</li>
-              <li><strong>Smart Routing:</strong> Sensitiv data behandles lokalt (On-premise), mens generell kunnskap routes til Gemini i skyen.</li>
+              <li><strong>Smart Routing (design i CSI Assistant, 2024–2026):</strong> Sensitive data ble behandlet lokalt, mens generelle spørsmål kunne gå til en språkmodell i skyen. arfed AIs produkter bruker ikke Gemini.</li>
             </ul>
           </div>
 
@@ -74,7 +74,7 @@ export default function AiLabPage() {
           <div className="bg-card p-6 rounded-lg border border-border shadow-sm">
             <h2 className="text-2xl font-bold mb-4">&quot;Take Point&quot; Synkronisering</h2>
             <p className="mb-4 text-sm">
-              Proprietær teknologi for kontekstuell dokumentasjon.
+              Utviklet i CSI Assistant (AI4INTERVIEWS, Oslo politidistrikt) for kontekstuell dokumentasjon.
             </p>
             <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
               <li><strong>Konsept:</strong> Bilder tatt i felt tidsstemples nøyaktig til sekundet i lydopptaket.</li>

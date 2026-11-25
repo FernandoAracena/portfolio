@@ -26,8 +26,8 @@ export const featuredProjects = [
     tech: ["Python", "FastAPI", "LangGraph", "Multi-Agent Systems", "Human-in-the-Loop", "Visual Reasoning", "Dynamic Prompting", "Angular 19+", "Azure", "pgvector", "Faster-Whisper", "Expo", "Kotlin", "Docker", "PostgreSQL", "MinIO"],
     category: "work",
     commercialNote: {
-      title: "Kommersiell videreutvikling: SpeechToReport",
-      description: "Basert på erfaringene og arkitekturen fra CSI Assistant, har mitt selskap arfed AI utviklet SpeechToReport – en optimalisert og kommersiell løsning for automatisert rapportgenerering og intelligent saksstøtte.",
+      title: "Videre arbeid i arfed AI",
+      description: "Med erfaringene fra CSI Assistant grunnla jeg arfed AI, som lager SpeechToForm og SpeechToReport: egne produkter, utviklet i arfed AI, der modellen foreslår, koden kontrollerer og mennesket bestemmer.",
       url: "https://arfedai.no",
       urlLabel: "Besøk arfed AI (arfedai.no)"
     },
@@ -48,13 +48,12 @@ export const featuredProjects = [
   },
   {
     title: "LetsDanceToday",
-    description: "Internasjonal plattform for å oppdage og dele dansearrangementer. Kobler dansere sammen på tvers av landegrenser.",
-    longDescription: "LetsDanceToday er en dedikert plattform for dansemiljøet, designet for å gjøre det enkelt å finne workshops, festivaler og sosiale arrangementer. Løsningen tilbyr en interaktiv oversikt over eventer globalt, og fungerer som et samlingspunkt for dansere uansett nivå.",
+    description: "Danseplattform i drift 2025–2026: 802 arrangementer fra 20 arrangører i fire norske byer. Avsluttet i oktober 2026.",
+    longDescription: "LetsDanceToday var en plattform for dansemiljøet, laget for å gjøre det enkelt å finne workshops, festivaler og sosiale arrangementer. Den var i drift i 2025–2026 med 802 arrangementer fra 20 arrangører i fire norske byer, og ble avsluttet i oktober 2026.",
     slug: "letsdancetoday",
     image: "/images/letsdancetoday.png",
     tech: ["React", "Node.js", "PostgreSQL", "Google Maps API", "C#"],
     category: "personal",
-    url: "https://letsdancetoday.com",
   },
   {
     title: "Psykolog Miriam Heen Skotland",
